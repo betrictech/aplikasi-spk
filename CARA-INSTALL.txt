@@ -1,0 +1,66 @@
+=======================================================
+CARA INSTALL DAN JALANKAN APLIKASI SPK
+=======================================================
+
+LANGKAH 1: Install Node.js
+---------------------------
+1. Download dari: https://nodejs.org
+2. Install seperti aplikasi biasa
+3. Restart komputer
+
+LANGKAH 2: Install Aplikasi
+---------------------------
+1. Buka Command Prompt (Windows) atau Terminal (Mac)
+   - Windows: Tekan tombol Windows, ketik "cmd", Enter
+   - Mac: Tekan Command + Space, ketik "terminal", Enter
+
+2. Pindah ke folder aplikasi, ketik:
+   cd C:\aplikasi-spk
+   (Sesuaikan dengan lokasi folder Anda)
+
+3. Install dependencies, ketik:
+   npm install
+   (Tunggu sampai selesai, bisa 2-5 menit)
+
+LANGKAH 3: Jalankan Aplikasi
+---------------------------
+1. Di Command Prompt/Terminal yang sama, ketik:
+   npm run dev
+
+2. Tunggu sampai muncul tulisan:
+   "Local: http://localhost:3000"
+
+3. Buka browser (Chrome/Firefox)
+
+4. Ketik di address bar:
+   http://localhost:3000
+
+5. Aplikasi SPK siap digunakan!
+
+CARA MENUTUP APLIKASI
+---------------------------
+- Tekan Ctrl + C di Command Prompt/Terminal
+- Atau tutup jendela Command Prompt/Terminal
+
+CARA MENJALANKAN LAGI
+---------------------------
+1. Buka Command Prompt/Terminal
+2. Ketik: cd C:\aplikasi-spk
+3. Ketik: npm run dev
+4. Buka browser: http://localhost:3000
+
+=======================================================
+TROUBLESHOOTING
+=======================================================
+
+Error: "node is not recognized"
+→ Node.js belum terinstall atau perlu restart komputer
+
+Error: "cannot find module"
+→ Jalankan: npm install
+
+Port 3000 sudah dipakai
+→ Tutup aplikasi lain yang pakai port 3000
+→ Atau ganti port dengan: npm run dev -- -p 3001
+
+=======================================================
